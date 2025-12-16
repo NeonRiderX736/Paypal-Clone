@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Dashboard</h2>
+<p>Balance: $<span id="balance">0</span></p>
+
+
+<button onclick="addFunds()">Add $10</button>
+
+
+<h3>Send Money</h3>
+<input id="to" placeholder="Receiver Email">
+<input id="amount" type="number" placeholder="Amount">
+<button onclick="sendMoney()">Send</button>
+
+
+<h3>Transactions</h3>
+<div id="history"></div>
+
+
+<button onclick="logout()">Logout</button>
+
+
+<script src="dashboard.js"></script>
+</body>
+</html>
